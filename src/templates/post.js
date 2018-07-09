@@ -66,11 +66,11 @@ class PostPage extends React.Component {
           <br/>
           <section className="section hero is-small is-info">
             <div className="hero-body container content">
-            <article className="media">
-              <div className="media-left">
-                <figure className="icon is-large">
+            <article className="media is-block-mobile">
+              <div className="media-left ">
+                <span className="icon is-large">
                   <i className="fab fa-twitter fa-3x"></i>
-                </figure>
+                </span>
               </div>
               <div className="media-content">
                 <div className="content">
