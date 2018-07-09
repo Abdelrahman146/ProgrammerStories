@@ -1,0 +1,108 @@
+
+// fontawesome lib
+@import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
+
+// 1. Import the initial variables
+@import "node_modules/bulma/sass/utilities/initial-variables";
+@import "node_modules/bulma/sass/utilities/functions";
+
+// Import a Google Font
+//@import url('https://fonts.googleapis.com/css?family=Fira+Mono:500|Fira+Sans+Condensed:600|Fira+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:500|Fira+Sans+Condensed:600|Fira+Sans:400,400i,600,600i');
+
+$black:        #0D0D0E;
+$black-bis:    #2A2A2E;
+$black-ter:    #38383D;
+
+$grey-darker:  #495057;
+$grey-dark:    #6B7C93;
+$grey:         #737474;
+$grey-light:   #B2B1B3;
+$grey-lighter: #D7D7DB;
+
+$white-ter:    #F7FBFB;
+$white-bis:    #F6F9FC;
+$white:        #FFFFFF;
+
+$orange:       #F7931E;
+$orange-bold:    linear-gradient(45deg, $orange, lighten($orange,6));
+$yellow:       #FFC059;
+$yellow-bold:    linear-gradient(45deg, $yellow, lighten($yellow,6));
+$green:        #3ECF8E;
+$green-bold:     linear-gradient(45deg, $green, lighten($green,6));
+$turquoise:    #008EA4;
+$turquoise-bold: linear-gradient(45deg, $turquoise, lighten($turquoise,6));
+$cyan:         #2EC0D1;
+$cyan-bold:      linear-gradient(45deg, $cyan, lighten($cyan,6));
+$blue:         #408AF8;
+$blue-bold:    #6772E5;
+$purple:       #7356B6;
+$purple-bold:    linear-gradient(45deg, $purple, lighten($purple,6));
+$pink:         #9251AC;
+$pink-bold:      linear-gradient(45deg, $pink, lighten($pink,6));
+$red:          #EB3C20;
+$red-bold:       linear-gradient(45deg, $red, lighten($red,6));
+
+// Update Bulma's global variables
+$primary: $green;
+$link: $blue-bold;
+$info: $blue;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+$background: $white;
+
+
+// text
+
+
+
+$border: $grey-lighter;
+$border-hover: lighten($grey-dark, 5);
+
+
+$family-sans-serif: 'Fira Sans', sans-serif;
+$family-primary: $family-sans-serif;
+$body-family: $family-primary;
+$family-monospace: 'Fira Mono', monospace;
+$body-size: 16px;
+$weight-light: 300;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+$body-weight: $weight-normal;
+$strong-weight: $weight-semibold;
+$text: $grey-dark;
+$text-strong: $grey-darker;
+$text-invert: $white;
+$code: $green;
+.title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+
+$radius-small: 2px;
+$radius:  	4px;
+$radius-large: 6px;
+
+// link
+$link: $blue-bold;
+$link-invert: $white;
+$link-visited: $blue-bold;
+$link-hover: darken($blue-bold, 10);
+$link-hover-border: darken($blue-bold, 10);
+$link-focus: darken($blue-bold, 10);
+$link-focus-border: darken($blue-bold, 10);
+$link-active: darken($blue-bold, 10);
+$link-active-border: darken($blue-bold, 10);
+
+// Update some of Bulma's component variables
+// $control-border-width: 2px;
+// $input-background-color: $beige-lighter;
+// $input-border-color: transparent;
+// $input-shadow: none;
+
+
+@import "node_modules/bulma/bulma";
+
+@import "./page";
