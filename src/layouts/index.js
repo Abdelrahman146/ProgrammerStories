@@ -15,9 +15,7 @@ class Layout extends React.Component {
   render() {
     return (
       <div>
-        <Helmet>
-          <title>{this.props.data.site.siteMetadata.title}</title>
-        </Helmet>
+
         <Nav/>
         <div>
           {this.props.children({...this.props})}
@@ -25,7 +23,7 @@ class Layout extends React.Component {
         <footer className="footer">
           <div className="content has-text-centered">
             <p>
-              <strong>Programmer Stories</strong> Developed by <a href="https://twitter.com/abdelrahman_146">Abdel Rahman Harahsheh</a>. Powered by <a href="https://gatsby.org">Gatsby JS</a>
+              <strong>undefined blog</strong> Developed by <a href="https://twitter.com/abdelrahman_146">Abdel Rahman Harahsheh</a>. Powered by <a href="https://gatsby.org">Gatsby JS</a>
             </p>
             <a href="https://www.netlify.com">
               <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"/>
@@ -42,13 +40,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-export const query = graphql`
-  query SiteTitleQuery {
-      site {
-    siteMetadata {
-      title
-    }
-    }
-  }
-`

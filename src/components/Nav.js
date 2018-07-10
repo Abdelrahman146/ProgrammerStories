@@ -31,7 +31,7 @@ class Nav extends React.Component {
         <div className="container">
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">
-            <p className="is-size-5"><span className="icon"><i className="fas fa-chevron-left"></i></span><span className="icon"><i className="fas fa-marker "></i></span><span className="icon"><i className="fas fa-chevron-right"></i></span><span>Programmer Stories</span></p>
+            <p className="is-size-5"><span className="icon"><i className="fas fa-chevron-left"></i></span><span className="icon"><i className="fas fa-marker "></i></span><span className="icon"><i className="fas fa-chevron-right"></i></span><span>undefined blog</span></p>
           </Link>
           <a role="button" className={`navbar-burger ${this.state.menuActive}`} onClick={this.toggleMenu} data-target="navMenu" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
