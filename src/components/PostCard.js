@@ -20,7 +20,7 @@ class PostCard extends React.Component {
           </div>
 
           <div className="card-content">
-            <div className="content">
+            <div className="content postContent">
               <h3 className="title"><Link to={this.props.link}>{this.props.title}</Link></h3>
               <div className="subtitle is-size-6" dangerouslySetInnerHTML={{ __html: this.props.summary }}/>
 

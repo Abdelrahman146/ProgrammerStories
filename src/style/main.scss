@@ -8,7 +8,8 @@
 
 // Import a Google Font
 //@import url('https://fonts.googleapis.com/css?family=Fira+Mono:500|Fira+Sans+Condensed:600|Fira+Sans:400,600');
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono:500|Fira+Sans+Condensed:600|Fira+Sans:400,400i,600,600i');
+// @import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:400,700|Spectral:400,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:400,700|Yrsa:400,700');
 
 $black:        #0D0D0E;
 $black-bis:    #2A2A2E;
@@ -53,14 +54,14 @@ $danger: $red;
 $background: $white;
 
 
-// text
+
 
 
 
 $border: $grey-lighter;
 $border-hover: lighten($grey-dark, 5);
 
-
+// text
 $family-sans-serif: 'Fira Sans', sans-serif;
 $family-primary: $family-sans-serif;
 $body-family: $family-primary;
@@ -72,12 +73,12 @@ $weight-semibold: 600;
 $weight-bold: 700;
 $body-weight: $weight-normal;
 $strong-weight: $weight-semibold;
-$text: $grey-dark;
+$text: $grey-darker;
 $text-strong: $grey-darker;
 $text-invert: $white;
 $code: $green;
-.title {
-  font-family: 'Fira Sans Condensed', sans-serif;
+.postContent {
+  font-family: 'Yrsa', 'Times New Roman',serif !important;
 }
 
 

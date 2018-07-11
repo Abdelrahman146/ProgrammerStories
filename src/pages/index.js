@@ -43,11 +43,11 @@ class IndexPage extends React.Component {
                 <div className="column is-one-third ">
                   <div className="content has-text-centered notification is-primary">
                     <h3 className="title">Welcome!</h3>
-                    <p>Welcome to undefined blog! I hope you find all the posts on this blog useful. if you like any post support me by sharing this blog with your friends. Also, if you would like me to write about any technology topic in the future. you can ask me with a small tweet on twitter.</p>
+                    <p>Welcome to undefined blog! I hope you will find all the posts on this blog useful. if you like any post, please support me by sharing this blog with your friends. Also, if you are interested in a technology topic and you want me to write about it, you can ask me with a small tweet on twitter.</p>
                   </div>
                   <div className="content has-text-centered notification is-info">
                     <h3 className="title">Why?!</h3>
-                    <p>Internet, Applications, Artificial Intelligence, Business Intelligence, Internet of Things, and now Internet of Everything. surely you heard of at least one of those terms. this blog will be all about these beautiful human inventions and innovations. starting from the world of internet till we reach the big bang of data and the emergence of Artificial Intelligence </p>
+                    <p>Internet, Applications, Artificial Intelligence, Business Intelligence, Internet of Things, and now Internet of Everything. surely you heard of at least one of those terms. this blog is about all of these beautiful human inventions and innovations. starting from the world of internet until we reach the big bang of data and the emergence of Artificial Intelligence</p>
                   </div>
                   <div className="content has-text-centered notification is-light">
                     <h3 className="title">About Author</h3>

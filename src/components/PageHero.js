@@ -18,7 +18,7 @@ class PageHero extends React.Component {
               A Programmer who wants to tell the world
             </h1>
             <h1 className="subtitle is-size-3">
-              about things <strong className="is-size-1">HE LOVE!</strong>
+              about things <strong className="is-size-1">HE LOVES!</strong>
             </h1>
             <a href="https://twitter.com/abdelrahman_146" target="_blank" className="button is-light " data-show-count="false"><span className="icon"><i className="fab fa-twitter"></i></span><span>Follow</span></a>
           </div>

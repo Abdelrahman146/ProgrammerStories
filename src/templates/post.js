@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
+import glamorous from 'glamorous'
 
 import PageHero from '../components/PageHero'
 import PostCard from '../components/PostCard'
@@ -21,45 +22,54 @@ class PostPage extends React.Component {
       <div>
         <div>
           <section className="section">
-            <div className="container">
-              <br/>
-              <article className="media">
-                <figure className="media-left">
-                  <p className="image is-avatar is-96x96">
-                    <img src={data.author.frontmatter.image.childImageSharp.resize.src}/>
-                  </p>
-                </figure>
-                <div className="media-content">
-                  <div className="content">
-                    <p>
-                    <span className="level is-mobile"><span className="level-left"><strong className="level-item">{data.author.frontmatter.nickname}</strong><a href={this.props.twitter_link} target="_blank" className="button level-item is-info is-small is-rounded is-outlined"><span className="icon"><i className="fab fa-twitter"></i></span>
-                    <span>follow</span></a></span></span>
-                      {data.author.frontmatter.intro}
-                    </p>
-                  </div>
+            <div className="container ">
+              <div className="columns is-centered">
+                <div className="column is-two-thirds content postContent">
+                    <h1 className="title is-size-1">{data.post.frontmatter.title}</h1>
+                    <p className="subtitle">{data.post.frontmatter.subtitle}</p>
+                    <p className="has-text-info">Published: {data.post.frontmatter.date}</p>
                 </div>
-              </article>
-            </div>
-          </section>
-
-            <div className="hero is-medium">
-              <div className="her-body">
-                <figure>
-                  <img width="100%" src={data.post.frontmatter.image.childImageSharp.resize.src}/>
-                </figure>
               </div>
             </div>
+          </section>
 
-            <section className="section">
-              <div className="container">
-              <h1 className="title is-size-1">{data.post.frontmatter.title}</h1>
-              <p className="subtitle">{data.post.frontmatter.subtitle}</p>
-              <p className="has-text-info">Published: {data.post.frontmatter.date}</p>
-              <br/>
+          <glamorous.Figure
+          backgroundImage={`url(${data.post.frontmatter.image.childImageSharp.resize.src})`}
+          backgroundSize="cover"
+          backgroundPosition="center"
+          backgroundRepeat="no-repeat"
+          backgroundAttachment="fixed"
+          height="350px"
+          width="100%"
+          />
 
-              <div className="content" dangerouslySetInnerHTML={{ __html: data.post.html }}/>
+          <section className="section">
+            <div className="container">
+              <div className="columns is-centered">
+                <div className="column is-two-thirds">
+                  <article className="media">
+                    <figure className="media-left">
+                      <p className="image is-avatar is-64x64">
+                        <img src={data.author.frontmatter.image.childImageSharp.resize.src}/>
+                      </p>
+                    </figure>
+                    <div className="media-content">
+                      <div className="content is-medium">
+                        <p className="has-text-grey-dark">
+                        <span className="level is-mobile"><span className="level-left"><strong className="level-item">{data.author.frontmatter.nickname}</strong><a href={this.props.twitter_link} target="_blank" className="button level-item is-info is-small is-rounded is-outlined"><span className="icon"><i className="fab fa-twitter"></i></span>
+                        <span>follow</span></a></span></span>
+                          {data.author.frontmatter.intro}
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <br/>
+                  <div className="content is-medium postContent" dangerouslySetInnerHTML={{ __html: data.post.html }}/>
+                </div>
+              </div>
             </div>
           </section>
+
           <br/>
           <br/>
           <br/>
