@@ -30,8 +30,8 @@ class PostCard extends React.Component {
               </div>
             </div>
           </div>
-          <div className="level">
-            <div className="level-left">
+          <div className="level is-mobile">
+            <div className="level-left content is-small">
               <div className="level-item">
                 <span className="icon"><i className="fas fa-calendar-alt"></i></span>
                 <span> {this.props.publishDate}</span>
