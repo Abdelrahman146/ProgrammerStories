@@ -18,7 +18,7 @@ class IndexPage extends React.Component {
     return (
       <div>
         <Helmet>
-          <title>undefined blog</title>
+          <title>code undefined</title>
         </Helmet>
         <div>
           <PageHero/>
@@ -27,24 +27,23 @@ class IndexPage extends React.Component {
               <div className="columns">
                 <div className="column is-two-thirds">
                   <h1 className="title">Last Posts</h1>
-                  <div className="columns is-multiline">
+                  <div className="">
                   {[posts.map((post) => (
-                    <div className="column is-half">
                     <PostCard
                       title={post.node.frontmatter.title}
                       img={post.node.frontmatter.image.childImageSharp.resize.src}
                       summary={post.node.frontmatter.subtitle}
                       publishDate={post.node.frontmatter.date}
+                      reading_time={post.node.frontmatter.reading_time}
                       link={post.node.fields.slug}
                     />
-                    </div>
                   ))]}
                   </div>
                 </div>
                 <div className="column is-one-third ">
                   <div className="content has-text-centered notification is-primary">
                     <h3 className="title">Welcome!</h3>
-                    <p>Welcome to undefined blog! I hope you will find all the posts on this blog useful. if you like any post, please support me by sharing this blog with your friends. Also, if you are interested in a technology topic and you want me to write about it, you can ask me with a small tweet on twitter.</p>
+                    <p>Welcome to code undefined! I hope you will find all the posts on this blog useful. if you like any post, please support me by sharing this blog with your friends. Also, if you are interested in a technology topic and you want me to write about it, you can ask me with a small tweet on twitter.</p>
                   </div>
                   <div className="content has-text-centered notification is-info">
                     <h3 className="title">Why?!</h3>
@@ -97,6 +96,7 @@ export const IndexQuery = graphql`
             title
             date
             subtitle
+            reading_time
             image {
               childImageSharp{
                 resize(width: 500) {

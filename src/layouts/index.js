@@ -23,7 +23,7 @@ class Layout extends React.Component {
         <footer className="footer">
           <div className="content has-text-centered">
             <p>
-              <strong>undefined blog</strong> Developed by <a href="https://twitter.com/abdelrahman_146">Abdel Rahman Harahsheh</a>. Powered by <a href="https://gatsby.org">Gatsby JS</a>
+              <strong>code undefined</strong> Developed by <a href="https://twitter.com/abdelrahman_146">Abdel Rahman Harahsheh</a>. Powered by <a href="https://gatsby.org">Gatsby JS</a>
             </p>
             <a href="https://www.netlify.com">
               <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"/>

@@ -6,6 +6,7 @@ author_id: 1
 tweet_id: '1016673434158424064'
 subtitle: "Today (20 June) is World Refugee Day, and we are examining how blockchain technology could benefit migrants in their quest to settle into their new home countries."
 date: "July 9, 2018"
+reading_time: "3mins"
 image: "./first-post/main.jpg"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse orci ipsum, aliquam auctor aliquam ac, maximus vitae arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin imperdiet dictum nisi vitae commodo. Sed mollis massa a purus rutrum mollis. Curabitur faucibus, diam sed blandit consectetur, nisl ipsum vulputate magna, at condimentum urna justo a nunc. Cras non maximus quam, vel iaculis massa. Duis molestie lorem feugiat vulputate tincidunt. Donec libero nunc, tincidunt ac pulvinar ac, pharetra a ligula. Curabitur lacinia lorem sit amet nibh rutrum, vel mollis lacus posuere. Fusce nulla justo, maximus laoreet finibus eget, pharetra id erat. Nulla consequat eget est a congue.

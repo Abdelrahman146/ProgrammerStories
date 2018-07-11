@@ -16,8 +16,12 @@
   }
 }
 
-.follow-white {
-  .btn {
-    background-color: $white !important;
-  }
+.main-nav {
+  border-bottom: 1px solid $grey-lighter;
+}
+.logo {
+  background-color: $white-bis;
+  padding: 3px 10px;
+  border-radius: 5px;
+  color: $dark;
 }

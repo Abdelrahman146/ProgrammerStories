@@ -6,6 +6,7 @@ author_id: 1
 tweet_id: '1016673434158424064'
 subtitle: "Why Data Science Needs Entrepreneurship"
 date: "July 10, 2018"
+reading_time: "6mins"
 image: "./data-science-in-bubble/main.jpeg"
 ---
 I’m afraid I have some bad news for my fellow data scientists; data science is one of the worst investments a company can make today.

@@ -31,7 +31,7 @@ class PostPage extends React.Component {
                 <div className="column is-two-thirds content postContent">
                     <h1 className="title is-size-1">{data.post.frontmatter.title}</h1>
                     <p className="subtitle">{data.post.frontmatter.subtitle}</p>
-                    <p className="has-text-info">Published: {data.post.frontmatter.date}</p>
+                    <p className="has-text-info">Published: {data.post.frontmatter.date} - {data.post.frontmatter.reading_time} read</p>
                 </div>
               </div>
             </div>
@@ -126,6 +126,7 @@ export const query = graphql`
         subtitle
         date
         tweet_id
+        reading_time
         image {
           childImageSharp {
             resize(width: 1920) {
