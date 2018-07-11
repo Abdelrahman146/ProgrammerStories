@@ -25,8 +25,8 @@ class PostCard extends React.Component {
             </div>
             <div className="column is-two-thirds">
               <div className="content postContent">
-                <h3 className="title"><Link to={this.props.link}>{this.props.title}</Link></h3>
-                <div className="subtitle is-size-6" dangerouslySetInnerHTML={{ __html: this.props.summary }}/>
+                <h2 className="title"><Link to={this.props.link}>{this.props.title}</Link></h2>
+                <div className="subtitle" dangerouslySetInnerHTML={{ __html: this.props.summary }}/>
               </div>
             </div>
           </div>
