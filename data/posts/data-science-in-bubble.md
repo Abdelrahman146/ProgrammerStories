@@ -3,6 +3,7 @@ id: 2
 type: post
 title: The Data Science Bubble
 author_id: 1
+tweet_id: '1016673434158424064'
 subtitle: "Why Data Science Needs Entrepreneurship"
 date: "July 10, 2018"
 image: "./data-science-in-bubble/main.jpeg"

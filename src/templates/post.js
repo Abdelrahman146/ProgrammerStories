@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 import glamorous from 'glamorous'
+import {Tweet, Follow} from 'react-twitter-widgets'
 
 import PageHero from '../components/PageHero'
 import PostCard from '../components/PostCard'
@@ -20,6 +21,9 @@ class PostPage extends React.Component {
     const { data } = this.props
     return (
       <div>
+      <Helmet>
+        <title>code undefined | {data.post.frontmatter.title}</title>
+      </Helmet>
         <div>
           <section className="section">
             <div className="container ">
@@ -56,8 +60,16 @@ class PostPage extends React.Component {
                     <div className="media-content">
                       <div className="content is-medium">
                         <p className="has-text-grey-dark">
-                        <span className="level is-mobile"><span className="level-left"><strong className="level-item">{data.author.frontmatter.nickname}</strong><a href={this.props.twitter_link} target="_blank" className="button level-item is-info is-small is-rounded is-outlined"><span className="icon"><i className="fab fa-twitter"></i></span>
-                        <span>follow</span></a></span></span>
+                        <span className="level is-mobile"><span className="level-left"><strong className="level-item">{data.author.frontmatter.nickname}</strong>{/*<a href={this.props.twitter_link} target="_blank" className="button level-item is-info is-small is-rounded is-outlined"><span className="icon"><i className="fab fa-twitter"></i></span>
+                        <span>follow</span></a>*/}
+                        <Follow
+                        username="abdelrahman_146"
+                        options={{
+                          showCount: "false",
+                          showScreenName: 'false',
+                        }}
+                        />
+                        </span></span>
                           {data.author.frontmatter.intro}
                         </p>
                       </div>
@@ -76,33 +88,19 @@ class PostPage extends React.Component {
           <br/>
           <section className="section hero is-small is-info">
             <div className="hero-body container content">
-            <article className="media is-block-mobile">
-              <div className="media-left ">
-                <span className="icon is-large">
-                  <i className="fab fa-twitter fa-3x"></i>
-                </span>
-              </div>
-              <div className="media-content">
-                <div className="content">
-                    <h2 className="title">Did you Enjoy Reading ?!</h2>
-                    <p className="is-size-5">If you enjoyed reading, please follow me on twitter to recieve any new article I have uploaded, and show this article some love us by a small writing a small tweet about it. also if you would like to me to write about any topic in mind. please don&#39;t hestitate to ask me on twitter.</p>
-                </div>
-                <nav className="level is-mobile">
-                  <div className="level-left">
-                    <a href={this.props.twitter_link} target="_blank" className="level-item" aria-label="reply">
-                      <span className="icon is-small">
-                        <i className="fas fa-user-plus" aria-hidden="true"></i>
-                      </span>
-                    </a>
-                    <a href={`http://twitter.com/share?text=${data.post.frontmatter.title}&url=https://programmerStories.com${data.post.fields.slug}&hashtags=programmerStories&via=abdelrahman_146`} target="_blank" className="level-item" aria-label="retweet">
-                      <span className="icon is-small">
-                        <i className="fas fa-retweet" aria-hidden="true"></i>
-                      </span>
-                    </a>
-                  </div>
-                </nav>
-              </div>
-            </article>
+              <span className="icon is-large">
+                <i className="fab fa-twitter fa-3x"></i>
+              </span>
+              <h2 className="title">Give this post an applause!</h2>
+              <p className="is-size-5">If you enjoyed reading, please like and retweet. You can also reply to this tweet if you would like to add a comment.</p>
+              <Tweet
+              tweetId={data.post.frontmatter.tweet_id}
+              options={{
+                cards: 'hidden',
+                align: 'center',
+                hideMedia: 'true',
+              }}
+              />
             </div>
           </section>
         </div>
@@ -127,6 +125,7 @@ export const query = graphql`
         title
         subtitle
         date
+        tweet_id
         image {
           childImageSharp {
             resize(width: 1920) {

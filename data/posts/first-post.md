@@ -3,6 +3,7 @@ id: 1
 type: post
 title: How Blockchain Can Empower Refugees — Celebrating World Refugee Day
 author_id: 1
+tweet_id: '1016673434158424064'
 subtitle: "Today (20 June) is World Refugee Day, and we are examining how blockchain technology could benefit migrants in their quest to settle into their new home countries."
 date: "July 9, 2018"
 image: "./first-post/main.jpg"

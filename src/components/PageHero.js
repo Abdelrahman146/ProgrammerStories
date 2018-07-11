@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
-
+import {Follow} from 'react-twitter-widgets'
 
 class PageHero extends React.Component {
   constructor(props) {

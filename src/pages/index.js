@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
+import { Timeline } from 'react-twitter-widgets'
 
 import PageHero from '../components/PageHero'
 import PostCard from '../components/PostCard'
@@ -16,9 +17,9 @@ class IndexPage extends React.Component {
     const posts = data.allMarkdownRemark.edges
     return (
       <div>
-      <Helmet>
-        <title>undefined blog</title>
-      </Helmet>
+        <Helmet>
+          <title>undefined blog</title>
+        </Helmet>
         <div>
           <PageHero/>
           <section className="section">
@@ -52,6 +53,19 @@ class IndexPage extends React.Component {
                   <div className="content has-text-centered notification is-light">
                     <h3 className="title">About Author</h3>
                     <p>Abdel Rahman Harahsheh, software engineer, data scientist, web expert, graphic designer, nintendo fan and pokemon addict.</p>
+                  </div>
+                  <div className="content has-text-centered notification is-white">
+                  <Timeline
+                    dataSource={{
+                      sourceType: 'profile',
+                      screenName: 'abdelrahman_146'
+                    }}
+                    options={{
+                      username: 'Abdel',
+                      height: '400',
+                      chrome: 'nofooter noborders transparent',
+                    }}
+                  />
                   </div>
                 </div>
               </div>
