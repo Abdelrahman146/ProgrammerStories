@@ -25,3 +25,10 @@
   border-radius: 5px;
   color: $dark;
 }
+
+
+.post_card_info {
+  @media screen and (max-width: 350px) {
+    font-size: 12px;
+  }
+}
