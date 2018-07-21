@@ -26,8 +26,8 @@ class IndexPage extends React.Component {
             <div className="container">
               <div className="columns">
                 <div className="column is-two-thirds">
-                  <h1 className="title">Last Posts</h1>
-                  <div className="">
+                  <h1 className="title">No Posts Yet...</h1>
+                  {/*<div className="">
                   {[posts.map((post) => (
                     <PostCard
                       title={post.node.frontmatter.title}
@@ -38,7 +38,7 @@ class IndexPage extends React.Component {
                       link={post.node.fields.slug}
                     />
                   ))]}
-                  </div>
+                  </div>*/}
                 </div>
                 <div className="column is-one-third ">
                   <div className="content has-text-centered notification is-primary">
