@@ -27,4 +27,4 @@ You might be a bit confused “but hey, we can do the same thing in basic progra
 In machine learning we simply make an algorithm that takes data and let it create the decision formula or decision tree on its own. We just have to provide it with data or “past experience”.
 
 ## Conclusion
-In this post we have simplified what is machine learning, and how it got inspired from the learning techniques in the human brain. And we also went through how machine learning is much better than than explicit programming because it is very flexible and only dependent on the given data (dependent on what it observes).
+In this post we have simplified what is machine learning, and how it got inspired from the learning techniques in the human brain. And we also went through how machine learning is much better than explicit programming because it is very flexible and only dependent on the given data (dependent on what it observes).
