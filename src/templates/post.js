@@ -22,7 +22,9 @@ class PostPage extends React.Component {
     return (
       <div>
       <Helmet>
-        <title>code undefined | {data.post.frontmatter.title}</title>
+        <title>{data.post.frontmatter.title} | code undefined</title>
+        <meta name="description" content={data.post.frontmatter.subtitle}>
+        <meta name="author" content="Abdel Rahman Harahsheh">
       </Helmet>
         <div>
           <section className="section">
