@@ -92,6 +92,12 @@ module.exports = {
         fs_org: 'D7TNN',
       },
     },
+    {
+      resolve: 'gatsby-plugin-segment',
+      options: {
+        writeKey: 'e4EXkc5vhnHZ9vWzQPlSH59CRug9hKW3'
+      }
+    },
     // {
     //   resolve: 'gatsby-plugin-i18n',
     //   options: {
