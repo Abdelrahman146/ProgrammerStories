@@ -26,7 +26,7 @@ class IndexPage extends React.Component {
             <div className="container">
               <div className="columns">
                 <div className="column is-two-thirds">
-                  <h1 className="title">No Posts Yet...</h1>
+                  {/*<h1 className="title">No Posts Yet...</h1>*/}
                   <div className="">
                   {[posts.map((post) => (
                     <PostCard
