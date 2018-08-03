@@ -3,7 +3,7 @@ id: 1
 type: post
 title: What is Machine Learning?
 author_id: 1
-tweet_id: '1016673434158424064'
+tweet_id: '1025427743368990721'
 subtitle: "How Machines can learn ? how it is similar to the human brain? And how it is different than normal programming algorithms?"
 date: "02 August, 2018"
 reading_time: "4m"
