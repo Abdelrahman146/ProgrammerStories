@@ -4,7 +4,7 @@ type: post
 title: Machine Learning in a Nutshell
 author_id: 1
 tweet_id: '1016673434158424064'
-subtitle: "How Machines can learn ? how it’s similar to the human brain? And how it’s different than normal programming algorithms?"
+subtitle: "How Machines can learn ? how it’s similar to the human brain? And how it is different than normal programming algorithms?"
 date: "02 August, 2018"
 reading_time: "5mins"
 image: "./machine-learning-in-a-nutshell/13728.jpg"
