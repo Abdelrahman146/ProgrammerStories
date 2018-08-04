@@ -19,6 +19,7 @@ class IndexPage extends React.Component {
       <div>
         <Helmet>
           <title>code undefined</title>
+          <meta name="description" content="learn technology in very simple terms. Data Science, Artificial Intelligence, Machine learning, Internet of Things, Software Engineering, Game Development, Cloud Services and much more!"/>
         </Helmet>
         <div>
           <PageHero/>
